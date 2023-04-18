@@ -1,0 +1,12 @@
+﻿@model LoginUser
+
+<h4>Log in</h4>
+
+<form asp-controller = "Account" asp-action = "Login" method = "post">
+    <input type = "hidden" name = "returnUrl" value = "@ViewBag.returnUrl" />
+    <label asp-for="Email"></label>
+    <input asp-for="Email" />
+    <label asp-for="Password"></label>
+    <input asp-for="Password" />
+    <button type = "submit">Login</button>
+</form>

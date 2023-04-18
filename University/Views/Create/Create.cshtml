@@ -1,0 +1,21 @@
+﻿@model CreateUser
+
+<h1>Create User</h1>
+
+<form asp-action = "Create" method = "post">
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-for="Email"/>
+    </div>
+    <div>
+        <label asp-for="UserName"></label>
+        <input asp-for="UserName"/>
+    </div>
+    <div>
+        <label asp-for="Password"></label>
+        <input asp-for="Password"/>
+    </div>
+    <button type = "submit">Create</button>
+    <a asp-controller = "Home" asp-action="Index">Cancel</a>
+</form> 
+
